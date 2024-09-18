@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+document.write("<p>If I had nine hours to chop down a tree, I'd spend the first six sharpening my ax.</p>")
+document.write("<p><strong>Abraham Lincoln</strong></p>")
+
+function repeatingText() {
+    for (let i = 1; i <= 50; i++)
+    document.write("Line " + (i) + '<br>')
+}
+
+repeatingText();
+
+// Mozillatehtävä
+// if (navigator.userAgent.indexOf('Mozilla' !== -1)) {
+// window.location.href = "http://www.mozilla.org";
+// }
+//else {
+// window.location.href = "http://www.example.com";
+// }
+
+function verifikaatio() {
+    if (confirm("Oletko oppilas?"))
+{
+
+document.getElementById("viesti").innerText = "Tervetuloa oppilas."
+} else {
+document.getElementById("viesti").innerText = "Pääsy sivulle vain opiskelijoilla."
+}
+}
+
+document.write("http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg")
+
+var images =[
+
+"http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",
+"http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",
+"http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg"
+];
+
+document.write('');
+
+
+
+var images = [
+  "http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",
+  "http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",
+  "http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg"
+];
+
+document.write('<img src="' + images[0] + '">');
+
+function randomKuva() {
+    var images = [
+  "http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",
+  "http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",
+  "http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg"
+];
+var indeksi = Math.floor(Math.random() * images.length);
+    document.write('<img src="' + images[indeksi] + '">')
+}
+
+randomKuva();
+
+</script>
+</head>
+<body onload="verifikaatio()">
+<h1 id="viesti"></h1>    
+</body>
+</html>
